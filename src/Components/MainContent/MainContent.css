@@ -1,0 +1,13 @@
+@import '../../styles/variables.css';
+.main {
+    flex: 1;
+    background-color: var(--background-color);
+    padding: var(--spacing-lg) 0;
+}
+
+.container {
+    background-color: var(--surface-color);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}

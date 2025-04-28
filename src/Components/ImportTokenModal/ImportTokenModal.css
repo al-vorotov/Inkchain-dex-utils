@@ -1,0 +1,39 @@
+/* src/Components/ImportTokenModal/ImportTokenModal.css */
+.import-token-content,
+.confirm-import-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.token-address-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.verify-button,
+.import-button,
+.cancel-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3182ce;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.verify-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.verify-button:hover:not(:disabled),
+.import-button:hover,
+.cancel-button:hover {
+    background-color: #2b6cb0;
+}
+
+.error-message {
+    color: red;
+}

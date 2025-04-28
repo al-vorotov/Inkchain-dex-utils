@@ -1,0 +1,149 @@
+/* Основной контейнер для страницы */
+.mint-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0d0d0f; /* Тёмный фон */
+    color: #ffffff;
+    padding: 40px;
+}
+
+/* Заголовок */
+.mint-page h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #b3b3b3; /* Серый цвет для заголовка */
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Форма для минта */
+.mint-form {
+    background-color: #1a1a1d;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* Поля ввода */
+.mint-form input[type="text"],
+.mint-form input[type="number"],
+.mint-form input[type="url"],
+.mint-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 16px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2c2c2f;
+    color: #fff;
+    font-size: 16px;
+}
+
+.mint-form input::placeholder,
+.mint-form textarea::placeholder {
+    color: #666;
+}
+
+/* Кнопка Mint */
+.mint-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #9141ff, #c927ff); /* Градиент на кнопке */
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.mint-button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.mint-button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+/* Модалка для выбора кошелька */
+.wallet-options-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet-options-content {
+    background-color: #1a1a1d;
+    padding: 24px;
+    border-radius: 12px;
+    width: 320px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Превью модалка */
+.token-preview {
+    background-color: #1a1a1d;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 300px;
+    width: 100%;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.token-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.token-preview p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* Стиль для текста и линка "View Tx" */
+.transaction-success {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.transaction-success a {
+    color: #9141ff;
+    text-decoration: none;
+}
+
+.transaction-success a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+.liquidity-page {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0d0d0f;
+    min-height: 100vh;
+}
+
+.liquidity-page h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.header-pools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions .create-pool-button {
+    background-color: #9141ff;;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}

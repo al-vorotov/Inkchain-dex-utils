@@ -1,0 +1,12 @@
+@import '../../styles/variables.css';
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    text-align: center;
+    padding: var(--spacing-sm) 0;
+}
+
+.footer p {
+    margin: var(--spacing-xs) 0;
+}

@@ -1,0 +1,63 @@
+/* src/components/AddLiquidityModal/AddLiquidityModal.css */
+.add-liquidity-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.token-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.token-input label {
+    margin-right: 10px;
+}
+
+.balance {
+    font-size: 14px;
+    color: #555;
+}
+
+.separator {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.amount-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* src/components/ImportTokenModal/ImportTokenModal.css */
+.import-token-content,
+.confirm-import-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.token-address-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.verify-button,
+.import-button,
+.cancel-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
